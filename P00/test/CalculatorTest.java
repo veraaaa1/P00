@@ -32,7 +32,7 @@ public class CalculatorTest {
 	
 	/**
 	 * @throws java.lang.Exception
-	 */
+	 **/
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
