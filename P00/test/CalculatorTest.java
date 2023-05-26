@@ -30,6 +30,8 @@ public class CalculatorTest {
 	}
 	
 	
+	
+	
 	/**
 	 * @throws java.lang.Exception
 	 **/
@@ -57,10 +59,44 @@ public class CalculatorTest {
 	@After
 	public void tearDown() throws Exception {
 	}
-
+	
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testSubtract() {
+		// fail("Not yet implemented");
+		int a = 8765;
+		int b = 1234;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.subtract(a,b);
+		
+		int expected = 7531;
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	public void testMultiple() {
+		// fail("Not yet implemented");
+		int a = 12;
+		int b = 12;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.multiple(a,b);
+		
+		int expected = 144;
+		assertEquals(expected,actual);
+	}
+	
+	@Test
+	public void testDivide() {
+		// fail("Not yet implemented");
+		int a = 144;
+		int b = 12;
+		
+		Calculator cal = new Calculator();
+		int actual = cal.divide(a,b);
+		
+		int expected = 12;
+		assertEquals(expected,actual);
 	}
 
 }
